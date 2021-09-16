@@ -5,14 +5,17 @@
 	box-sizing: border-box;	
 	color: #725C5C;
 }
+body::-webkit-scrollbar{
+	display: none;
+}
 
-aside{
+.menu{
 	width: 220px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 	height: 100%;
 	position: fixed;
 }
-aside h1{
+.menu h1{
 	text-align: center;
 	line-height: 68px;
 	height: 68px;
@@ -20,16 +23,17 @@ aside h1{
 	background-image: linear-gradient(#FFB354, #EE7A3A);
 	font-size: 30px;
 }
-aside ul li{
-	height: 33px;
-	border-bottom: 1px solid #e7e7e7;
+.menu ul li{
+	height: 35px;
+	border-bottom: 2px solid #e7e7e7;
 	line-height: 2;
 }
-aside ul li a{
+.menu ul li a{
 	margin: 0 25px;
 	text-decoration: none;
 	font-family: Quicksand;
 	font-size: 15px;
+	font-weight: normal;
 }
 .ativo{
 	background-color: #FDF1EB;
@@ -55,14 +59,9 @@ aside ul li a{
 .content header{
 	height: 68px;
 	background-color: #FDF1EB;
-	padding: 6px 30px 0 30px;
+	padding: 6px 35px 0 35px;
 	display: flex;
 	justify-content: space-between;
-}
-.content header .title h3{
-	line-height: 25,78px;
-	font-size: 22px;
-	font-family: Roboto;
 }
 .content header .title p{
 	font-size: 14px;
@@ -99,10 +98,10 @@ aside ul li a{
 	text-align: right;
 }
 .content header .info-login img{
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	border-radius: 60%;
-	margin:8px 0 0 10px ;
+	margin:13px 0 0 10px ;
 }
 
 .content header .info-login .notif{
@@ -117,5 +116,214 @@ aside ul li a{
 	border-radius: 50%;
 	position: absolute;
 	right: 0;
+	top:9px;
 }
 
+.content .titulo-trabalho{
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.content .titulo h3{
+	color:rgba(237, 120, 57, 1);
+	font-weight: 900;
+	line-height: 25px;
+	font-size: 20px;
+	letter-spacing: 0.05em;
+}
+.content .titulo .video{
+	background:url('img/Video.png') no-repeat;
+	height: 439px;
+	width: 784px;
+	margin-top:20px;
+	border-radius: 3px; 
+	overflow: hidden;
+}
+.content .titulo .video .video-back{
+	position: relative;
+	background-color: rgba(141, 53, 6, 0.5);
+	height: 100%;
+	width: 100%;
+}
+.content .titulo .video .video-back>p{
+	font-family: Roboto;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 25px;
+	letter-spacing: 0.05em;
+	text-align: left;
+	color: rgba(255, 255, 255, 1);
+	padding: 40px 0 0 30px;
+}
+.content .titulo .video .info-autor{
+	position: absolute;
+	bottom:50px;
+	left: 30px;
+	display: flex;
+}
+.content .titulo .video .info-autor span{
+	border: 1px solid orange;
+	width: 80px;
+	display: block;
+	border-radius: 50%;
+	padding: 3px;
+	box-sizing: content-box;
+}
+.content .titulo .video .info-autor span img{
+	display: block;
+	border-radius: 50px;
+	margin: auto;
+}
+.content .titulo .video .info-autor .autor{
+	margin-left: 17px;
+	padding-top: 18px;
+}
+.content .titulo .video .info-autor .autor h4{
+	font-family: Roboto;
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 25px;
+	letter-spacing: 0.05em;
+	text-align: left;
+	color: #FFFFFF;
+}
+.content .titulo .video .info-autor .autor p{
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 25px;
+	letter-spacing: 0.05em;
+	text-align: left;
+	color:white;
+	margin-top: 10px;
+}
+
+
+.content .citacao{
+	width: 242px;
+	height: 439px;
+}
+.content .citacao button{
+	background: #ED7839;
+	border-radius: 4px;
+	width: 43px;
+	height: 31px;
+	color:white;
+	border:none;
+	float: right;
+	margin-left: 5px;
+}
+.content .citacao>p{
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0.05em;
+	text-align: right;
+	color: rgba(237, 120, 57, 1);
+	margin: 40px 0 5px 0;
+	clear: both;
+}
+.content .citacao>div, .resumo h4{
+	background: #FDF1EB;
+	border: 1px solid #ECECEC;
+	border-radius: 3px 3px 0px 0px;
+	padding: 10px;
+}
+.content .citacao>div p, .resumo h4{
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0em;
+	text-align: left;
+	color:#4e4e4e;
+}
+.content .citacao .detalhes{
+	padding: 5px;
+	border: 1px solid #ECECEC;
+}
+.content .citacao .detalhes div{
+	padding:10px 0 0 10px;
+	
+	border-top: none;
+	border-radius: 3px;
+	height: 380px;
+	overflow-y: scroll;
+}
+.content .citacao .detalhes div::-webkit-scrollbar{
+	width: 3px;
+	margin-right: 2px;
+}
+.content .citacao .detalhes div::-webkit-scrollbar-thumb{
+	background: rgba(191, 191, 191, 1);
+
+}
+.content .citacao .detalhes div::-webkit-scrollbar-track{
+	background: rgba(231, 231, 231, 1);
+}
+.content .citacao .detalhes ul li{
+	list-style: none;
+	font-family: Quicksand;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 12px;
+	letter-spacing: 0.02em;
+}
+.content .citacao .detalhes ul:nth-child(1) li{
+	padding-top: 5px;
+	font-weight: 500;
+}
+.content .citacao .detalhes ul:nth-child(2){
+	margin: 20px 0 35px 0; 
+	font-family: Quicksand;
+}
+.content .citacao .detalhes ul:nth-child(2) li{
+	font-size: 14px;
+	font-weight: normal;
+	padding-top: 3px;
+}
+.content .citacao .detalhes ul:nth-child(2) li sup{
+	font-size: 4px;
+}
+.content .citacao .detalhes ul:nth-child(3){
+	margin-bottom: 200px;
+}
+
+.resumo{
+	padding: 10px 50px;
+	cursor: pointer;
+}
+.resumo .resumo-texto{
+	border: 1px solid #ECECEC;
+	border-radius: 3px;
+	padding: 15px;
+	display: none;
+}
+.resumo .resumo-texto p, .resumo .resumo-texto-previa p{
+	font-family: Quicksand;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 23px;
+	letter-spacing: 0.02em;
+	color: #5C5C5C;
+	margin:15px 0;
+	text-align: justify;
+}
+.resumo .resumo-texto-previa{
+	border: 1px solid #ECECEC;
+	border-radius: 3px;
+	padding: 15px;
+	display: block;
+}
+.resumo .resumo-texto-previa span{
+	color: #ed7839;
+	font-weight: 700;
+}
