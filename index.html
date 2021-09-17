@@ -5,7 +5,6 @@
 	<title>Chuva - Exercício FrontEnd</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
@@ -32,38 +31,36 @@
 			<li><a href="#">Contato</a></li>
 		</ul>
 	</aside>
+	<div style="width: 220px;height: 100%;"></div>
+
 	<div class="content">
-		<header>
-			<div class="title">
-				<p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
-				<p style="line-height: 25.78px;	font-size: 22px;font-family: Roboto;font-weight: 400; font-style: normal">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</p>
-				<p>ISSN: 1234-5678</p>
-			</div>
-
-			<div class="info-login">
-				
-				<button>
-					PT, BR &#9660;
-				</button>
-
-				<div class="bemvindo">
-					<p>Bem vindo!</p>
-					<p style="font-size: 12px;">alguem12@galoascience.com</p>
+		<header class="">
+			<div class="container">
+				<div class="titulos">
+					<p>Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
+					<h4>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h4>
+					<p>ISSN: 1234-5678</p>
 				</div>
-					<img  class="fotoperfil" src="img/foto.png"><p class="notif">2</p>
+
+				<div class="info-sessao">
+					<button> PT, BR &#9660; </button>
+
+					<div class="bemvindo">
+						<p style="font-size:14px;line-height:17.5px">Bem vindo!</p>
+						<p style="margin-top: 3px;">alguem12@galoascience.com</p>
+					</div>
+						<img  class="fotoperfil" src="img/foto.png"><p class="notif">2</p>
+				</div>
 			</div>
 		</header>
 
-		<section class="titulo-trabalho">
-			<div class="titulo">
-				<h3>Análise sensorial de preparações funcionais desenvolvidas para escolares <br>entre 09 e 15 anos, do município de Campinas/SP </h3>
+		<section class="container">
+			<div class="titulo-trabalho">
+				<p>Análise sensorial de preparações funcionais desenvolvidas para escolares<br>entre 09 e 15 anos, do município de Campinas/SP </p>
 
 				<div class="video">
-					<div class="video-back">
-						<p>
-							Análise sensorial de preparações funcionais desenvolvidas para escolares
-							entre 09 e 15 anos, do município de Campinas/SP
-						</p>
+					<div class="video-sobre">
+						<p>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </p>
 
 						<div class="info-autor">
 							<span><img src="img/photo2.png"></span>
@@ -76,17 +73,14 @@
 				</div>
 			</div>
 
-			<aside class="citacao">
 
+			<aside class="citacao">
 				<button><img src="img/doi.png"></button>
 				<button><img src="img/starIcon.png"></button>
 				<button style="width:120px; text-align: center;padding: 0 5px;font-size: 16px"><img src="img/downloadIcon.png"> &nbsp Download</button>
 
 				<p>COMO CITAR ESSE TRABALHO?</p>
-
-				<div>
-					<p>Detalhes</p>
-				</div>
+				<h6 class="titulo-comum">Detalhes</h6>
 				<article class="detalhes">
 					<div>
 					<ul style="font-size: 12px">
@@ -117,8 +111,8 @@
 			</aside>
 		</section>
 
-		<article class="resumo">
-			<h4>Resumo</h4>
+		<article class="container resumo">
+			<h4 class="titulo-comum">Resumo</h4>
 			<div class="resumo-texto">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum </p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. </p>
@@ -131,8 +125,83 @@
 			</div>
 		</article>
 
-	</div>
+		<div class="container discussoes">
+			<h6 class="titulo-comum">Discussões</h6>
+			<div>
+				<div class="criar-topico">
+					<span>Compartilhe suas ideias ou dúvidas com os autores!</span>
+					<div class="icones">
+						<img src="img/discIcon1.png">
+						<img src="img/discIcon2.png">
+						<img src="img/discIcon3.png">
+					</div>
+				
+					<p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus<br>questionamentos ou sugestões para o autor!</p>
 
+					<div class="cta">
+						<hr>
+						<button> <img src="img/plus.png" > &nbsp criar tópico</button>
+					</div>
+				</div>
+
+				<form class="questionario">
+					<p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+					<label>Assunto</label>
+					<input type="text" name="assunto" value="Defina um tópico sucinto para notificar os autores...">
+
+					<label>Conteúdo</label>
+					<textarea></textarea>
+					<div><img src="img/bold.png"> <img src="img/italico.png"> <button type="submit">Enviar</button></div>
+					<hr>
+				</form>
+
+				<div class="topico-enviado">
+					<p style="color: #ED7839;font-family: Roboto;font-size: 18px;font-style: normal;font-weight: 700;line-height: 21px;letter-spacing: 0em;text-align: center;width: 100%;margin:15px auto;">Seu tópico foi enviado com sucesso! :D</p>
+
+					<p style="font-family: Quicksand;font-style: normal;font-weight: normal;font-size: 14px;line-height: 19px;text-align: center;color: #595959;margin:15px auto 30px auto;">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+
+					<a href="#">Descubra outros trabalhos!</a>
+
+					<div class="cta">
+						<hr>
+						<button>criar novo tópico</button>
+					</div>
+
+					<div class="pergunta">
+						<span>Assunto da pergunta aparece aqui</span>
+						<p class="autor">Carlos Henrique Santos</p>
+						
+						<p class="previa">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+						<div class="action">
+							<img src="img/menu-image.png">&nbsp&nbsp <img src="img/likeImage.png">&nbsp&nbsp <p>1 like &nbsp&nbsp 1 resposta</p>
+						</div>
+						<div class="sobre-pergunta"></div>
+					</div>
+				</div>
+
+				<div class="pergunta">
+					<span>Assunto da pergunta aparece aqui</span>
+					<p class="autor">Carlos Henrique Santos</p>
+					
+					<p class="previa">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+					<div class="action">
+						<img src="img/menu-image.png">&nbsp&nbsp <img src="img/likeImage.png">&nbsp&nbsp <p>1 like &nbsp&nbsp 1 resposta</p>
+					</div>
+				</div>
+				<div class="pergunta">
+					<span>Assunto da pergunta aparece aqui</span>
+					<p class="autor">Carlos Henrique Santos</p>
+					
+					<p class="previa">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+					<div class="action">
+						<img src="img/menu-image.png">&nbsp&nbsp <img src="img/likeImage.png">&nbsp&nbsp <p>1 like &nbsp&nbsp 1 resposta</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
